@@ -1,0 +1,15 @@
+.card-hover {
+    display: none;
+}
+
+.hover-parent:hover {
+    transform: translateY(-20px);
+    transition: 1s ease-in-out;
+}
+
+.hover-parent:hover .card-hover {
+    display: flex;
+    transition: 5s ease;
+}
+
+;
