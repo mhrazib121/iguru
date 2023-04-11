@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import "./Course.css"
+import Link from 'next/link';
 
 const Course = ({ item }) => {
     const { id, name, logo, total } = item;
@@ -10,7 +11,7 @@ const Course = ({ item }) => {
             </Image>
             <div className=' card-hover w-[100%] bg-[#000000] bg-opacity-30 h-[100%] absolute -mt-8 '>
                 <h2 className='text-xl font-bold text-white text-center absolute m-3'>{name}</h2>
-                <button className='bg-orange-600 px-4 py-2 h-[40px] m-auto rounded-lg text-slate-50'>Start Now</button>
+                <Link href={`/course/${id}`} className='bg-orange-600 px-4 py-2 h-[40px] m-auto rounded-lg text-slate-50'>Start Now</Link>
             </div>
         </div>
     );
