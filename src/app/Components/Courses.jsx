@@ -8,8 +8,6 @@ const Courses = memo(function Courses() {
     var rea = "d";
     const { color } = useTheme();
     const [data] = useData();
-    // const { data: items } = data;
-    console.log("data", data);
     return (
         <div className='w-screen lg:w-2/3 bg-slate m-auto'>
             <div className='flex gap-3 '>

@@ -3,9 +3,8 @@ import React from 'react';
 import Ban from "../../assets/page-common.jpg"
 
 const CommonTopBanner = ({ bgCommonImg, title }) => {
-    console.log("img", bgCommonImg);
     return (
-        <div className='min-h-screen bg-cover'
+        <div className='min-h-[250px] md:min-h-[400px] lg:min-h-[600px] bg-cover'
             style={{
                 background: `url(${bgCommonImg.src})`,
                 backgroundRepeat: 'no-repeat',

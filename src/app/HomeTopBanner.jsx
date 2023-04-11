@@ -7,8 +7,6 @@ import useTheme from './utils/Theme/CustomTheme';
 
 const HomeTopBanner = () => {
     const { color } = useTheme();
-    console.log(color.primary);
-    console.log("edsff");
     return (
         <div className="w-screen  hero min-h-screen mt-20">
             <div className="hero-content pb-0 flex-col lg:flex-row-reverse">
