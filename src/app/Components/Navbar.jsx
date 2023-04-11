@@ -21,7 +21,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link href="/home" className="text-xl w-24">
+                <Link href="/" className="text-xl w-24">
                     <Image src={Logo} alt="logo" />
                 </Link>
             </div>
