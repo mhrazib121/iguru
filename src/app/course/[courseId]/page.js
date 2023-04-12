@@ -1,11 +1,9 @@
 "use client"
-import Navbar from '@/app/Components/Navbar';
 import useSingleData from '@/app/Hooks/useSingleData';
-import Banner from "../../assets/page-common.jpg"
+import Banner from "../../assets/page-common.jpg";
 import React, { useEffect, useState } from 'react';
 import CommonTopBanner from '@/app/Components/CommonTopBanner/CommonTopBanner';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
-import Image from 'next/image';
 
 const Page = ({ params }) => {
     const [indexOfQuestion, setIndexOfQuestion] = useState(0)
@@ -37,7 +35,6 @@ const Page = ({ params }) => {
     console.log(indexOfQuestion, data);
     return (
         <>
-            <Navbar />
             <CommonTopBanner bgCommonImg={Banner} title="Course Quiz" />
             <br />
             <div className='bg-slate-300 w-2/4 p-12 rounded-md m-auto'>
