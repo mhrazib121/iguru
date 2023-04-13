@@ -8,9 +8,9 @@ import useTheme from './utils/Theme/CustomTheme';
 const HomeTopBanner = () => {
     const { color } = useTheme();
     return (
-        <div className="w-screen  hero min-h-screen mt-20">
+        <div className="w-4/5 mx-auto  hero min-h-screen mt-20">
             <div className="hero-content pb-0 flex-col lg:flex-row-reverse">
-                <Image src={Feature1} alt="Doctor" className="max-w-screen-sm rounded-lg " />
+                <Image src={Feature1} alt="Doctor" className="max-w-[420px] rounded-lg " />
                 <div className=''>
                     <span className={`p-2 text-md bg-color-light leading-8 rounded-md text-[${color.primary}]`}> LEARN ANYTIME, LEARN ANYTHING</span> <br /> <br />
                     <h1 className="text-5xl font-bold">We Give You The Perfect Smile You Wanted</h1>

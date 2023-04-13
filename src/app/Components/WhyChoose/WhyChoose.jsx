@@ -53,8 +53,8 @@ const WhyChoose = memo(function WhyChoose() {
             <h1 className='text-5xl font-bold text-black text-center'>Why Choose Us</h1>
             <p className='text-orange-600 text-md font-semibold mb-4 text-center'>Simple Reasons</p>
             <div className='relative'>
-                <Image className=' hidden lg:block w-[330px] absolute bottom-0 lg:left-[40%]' src={Person} alt='people' />
-                <div className='w-100 lg:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 my-12'>
+                <Image className=' hidden lg:flex w-[320px] absolute bottom-0 left-[50%] right-[50%] -ml-36' src={Person} alt='people' />
+                <div className='w-100 lg:w-[1060px] mx-auto grid grid-cols-1 md:grid-cols-2 my-12'>
                     {demoData.map((data, index) =>
                         <div key={data.id} className={`flex items-center ${index % 2 !== 0 ? "flex-row-reverse" : null}  gap-2 mx-4 my-8  `}>
                             <div className=' text-orange-600 text-5xl hover:text-black
@@ -62,7 +62,7 @@ const WhyChoose = memo(function WhyChoose() {
                                 {data.icon}
                             </div>
                             <div className={`flex
-                        flex-col w-full  ${index % 2 !== 0 ? "text-right" : "text-left"} w-3/5`}>
+                        flex-col w-full  ${index % 2 !== 0 ? "text-right" : "text-left"} lg:w-3/5`}>
                                 <h3 className='text-xl font-semibold'>{data.title}</h3>
                                 <p className=''>{data.describe}</p>
                             </div>
