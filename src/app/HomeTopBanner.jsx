@@ -12,11 +12,11 @@ const HomeTopBanner = () => {
             <div className="hero-content pb-0 flex-col lg:flex-row-reverse">
                 <Image src={Feature1} alt="Doctor" className="max-w-[420px] rounded-lg " />
                 <div className=''>
-                    <span className={`p-2 text-md bg-color-light leading-8 rounded-md text-[${color.primary}]`}> LEARN ANYTIME, LEARN ANYTHING</span> <br /> <br />
-                    <h1 className="text-5xl font-bold">We Give You The Perfect Smile You Wanted</h1>
-                    <p className="py-6 text-xl"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable.Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi.</p>
+                    <span className={`p-2 text-sm bg-color-light leading-8 rounded-md text-[${color.primary}]`}> LEARN ANYTIME, LEARN ANYTHING</span> <br /> <br />
+                    <h1 className="text-3xl font-bold">We Give You The Perfect Smile You Wanted</h1>
+                    <p className="py-6 text-md"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable.Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi.</p>
                     <br />
-                    <ul className='text-lg'>
+                    <ul className='text-md'>
                         <li className='my-2 flex gap-3'>
                             {/* <Check width={24} height={24} fill={color.primary} /> */}
                             <span>Mauris mattis lectus eget ligula dapibus, ac maximus ipsum</span>
@@ -37,7 +37,7 @@ const HomeTopBanner = () => {
                         <div className='flex gap-8 justify-start items-center'>
                             {/* <Image className='w-24' src={person2} alt="" /> */}
                             <div>
-                                <p className='text-2xl'>+880-0123-456789</p>
+                                <p className='text-lg'>+880-0123-456789</p>
                                 <p className='text-color-primary'>Do you have any question?</p>
                             </div>
                         </div>

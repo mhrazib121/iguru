@@ -50,20 +50,20 @@ const WhyChoose = memo(function WhyChoose() {
     }, []);
     return (
         <div className='p-6'>
-            <h1 className='text-5xl font-bold text-black text-center'>Why Choose Us</h1>
+            <h1 className='text-3xl font-bold text-black text-center'>Why Choose Us</h1>
             <p className='text-orange-600 text-md font-semibold mb-4 text-center'>Simple Reasons</p>
             <div className='relative'>
                 <Image className=' hidden lg:flex w-[320px] absolute bottom-0 left-[50%] right-[50%] -ml-36' src={Person} alt='people' />
-                <div className='w-100 lg:w-[1060px] mx-auto grid grid-cols-1 md:grid-cols-2 my-12'>
+                <div className='w-100 lg:w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 my-12'>
                     {demoData.map((data, index) =>
                         <div key={data.id} className={`flex items-center ${index % 2 !== 0 ? "flex-row-reverse" : null}  gap-2 mx-4 my-8  `}>
-                            <div className=' text-orange-600 text-5xl hover:text-black
+                            <div className=' text-orange-600 text-3xl hover:text-black
                         p-2 hover:bg-orange-100 hover:rounded-md transition delay-150'>
                                 {data.icon}
                             </div>
                             <div className={`flex
                         flex-col w-full  ${index % 2 !== 0 ? "text-right" : "text-left"} lg:w-3/5`}>
-                                <h3 className='text-xl font-semibold'>{data.title}</h3>
+                                <h3 className='text-lg font-semibold'>{data.title}</h3>
                                 <p className=''>{data.describe}</p>
                             </div>
                         </div>
