@@ -12,7 +12,7 @@ const CommonTopBanner = ({ bgCommonImg, title }) => {
                 backgroundPosition: "cover"
             }}
         >
-            <h1 className='text-white text-lg md:text-3xl lg:text-3xl font-bold text-center pt-[10%]'>{title}</h1>
+            <h1 className='text-white text-lg md:text-5xl lg:text-5xl font-bold text-center pt-[10%]'>{title}</h1>
         </div>
     );
 };

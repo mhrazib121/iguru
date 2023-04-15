@@ -41,8 +41,8 @@ const Page = ({ params }) => {
                 <div className='flex flex-col items-end'>
                     <p className=' mb-8 text-md font-normal'>Question {indexOfQuestion + 1} out of {total}</p>
                     {
-                        !isShow ? <AiOutlineEyeInvisible className='text-2xl cursor-pointer' onClick={() => setIsShow(true)} /> :
-                            <AiOutlineEye className='text-2xl cursor-pointer' onClick={() => setIsShow(false)} />
+                        !isShow ? <AiOutlineEyeInvisible className='text-3xl cursor-pointer' onClick={() => setIsShow(true)} /> :
+                            <AiOutlineEye className='text-3xl cursor-pointer' onClick={() => setIsShow(false)} />
                     }
                 </div>
 
@@ -50,7 +50,7 @@ const Page = ({ params }) => {
                     questions?.map((data) => <>
                         {
                             question === data && <>
-                                <h1 className='text-2xl font-semibold mb-4'>
+                                <h1 className='text-3xl font-semibold mb-4'>
                                     {data.question}
                                 </h1>
                                 <ul>

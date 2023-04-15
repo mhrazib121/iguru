@@ -14,7 +14,7 @@ const SubscribeSection = () => {
                 }}
             >
                 <div className='lg:flex flex-col items-center'>
-                    <h3 className='text-white text-3xl mb-4 font-bold '>Web development Course For Professionals</h3>
+                    <h3 className='text-white text-5xl mb-4 font-bold '>Web development Course For Professionals</h3>
                     <p className='text-white text-lg'>Our qualified and experienced trainers created special
                         programmes to meet your specific needs.</p>
                     <button className="btn mt-4 border-none rounded-sm bg-orange-600 text-white hover:bg-white hover:text-black">Red More</button>
