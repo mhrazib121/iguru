@@ -1,6 +1,9 @@
+import Script from 'next/script'
 import Footer from './Components/Footer/Footer'
 import Navbar from './Components/Navbar'
 import './globals.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const metadata = {
   title: 'Create Next App',

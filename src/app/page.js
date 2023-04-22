@@ -11,6 +11,7 @@ import Testimonials from './Components/Testimonials';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <div >
       <HomeTopBanner />

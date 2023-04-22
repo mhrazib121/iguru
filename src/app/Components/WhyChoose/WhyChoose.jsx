@@ -1,10 +1,12 @@
-import React, { memo, useMemo } from 'react';
+"use client"
+import React, { memo, useEffect, useMemo } from 'react';
 import { BsStar, BsRocketTakeoff } from "react-icons/bs";
 import { GiNewspaper, GiThreeFriends, } from "react-icons/gi";
 import { TbCertificate } from "react-icons/tb";
 import { BiLike } from "react-icons/bi";
 import Image from 'next/image';
 import Person from "../../assets/person-removebg-preview.png";
+import AOS from "aos";
 
 const WhyChoose = memo(function WhyChoose() {
     const demoData = useMemo(() => {
@@ -48,9 +50,24 @@ const WhyChoose = memo(function WhyChoose() {
         ]
         return useData;
     }, []);
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            delay: 200,
+            offset: 50,
+            easing: 'ease-out',
+            once: true,
+            anchorPlacement: 'bottom-bottom',
+        });
+    }, []);
+
     return (
-        <div className='p-6'>
-            <h1 className='text-5xl font-bold text-black text-center'>Why Choose Us</h1>
+        <div className='p-6'
+            data-aos="fade-down"
+            data-aos-delay='300'>
+            <h1 className='text-5xl font-bold text-black text-center'
+            >Why Choose Us</h1>
             <p className='text-orange-600 text-md font-semibold mb-4 text-center'>Simple Reasons</p>
             <div className='relative'>
                 <Image className=' hidden lg:flex w-[320px] absolute bottom-0 left-[50%] right-[50%] -ml-36' src={Person} alt='people' />
@@ -64,7 +81,9 @@ const WhyChoose = memo(function WhyChoose() {
                             <div className={`flex
                         flex-col w-full  ${index % 2 !== 0 ? "text-right" : "text-left"} lg:w-3/5`}>
                                 <h3 className='text-lg font-semibold'>{data.title}</h3>
-                                <p className=''>{data.describe}</p>
+                                <p className=''
+                                    data-aos='fade-up'
+                                    data-aos-delay='600' >{data.describe}</p>
                             </div>
                         </div>
                     )}

@@ -5,6 +5,7 @@ import BlogImg3 from "../../assets/Blogs/post-2.jpg";
 import BlogImg4 from "../../assets/Blogs/post-4.jpg";
 import Image from 'next/image';
 import Tittle from '../Common/Tittle';
+import Link from 'next/link';
 
 const BlogDiv = () => {
     const demoData = useMemo(() => {
@@ -49,7 +50,9 @@ const BlogDiv = () => {
     }, []);
 
     return (
-        <div className='w-3/5 mt-12 mx-auto'>
+        <div className='w-3/5 mt-12 mx-auto'
+            data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+        >
             <br />
             <Tittle text="DISCOVER NEWS" />
             <h1 className='text-5xl font-bold mb-8'>Read our blogs</h1>
@@ -62,7 +65,7 @@ const BlogDiv = () => {
                     </div>
 
                     <p className='text-sm font-semibold mt-4'>{demoData[0].date} / 0 Comments</p>
-                    <h1 className='text-2xl mt-2 font-semibold hover:text-orange-600 cursor-pointer'>{demoData[0].title}</h1>
+                    <Link href="#" className='text-2xl font-semibold hover:text-orange-600 cursor-pointer' > {demoData[0].title} </Link>
                 </div>
                 <div className=' w-5/6'>
 
@@ -78,8 +81,7 @@ const BlogDiv = () => {
                             </div>
                             <div className='my-auto'>
                                 <p className='text-[12px] font-semibold mb-2'>{blog.date} / 0 Comments</p>
-                                <h1 className='text-lg font-semibold hover:text-orange-600 cursor-pointer'>{blog.title}</h1>
-
+                                <Link href="#" className='text-lg font-semibold hover:text-orange-600 cursor-pointer' > {blog.title} </Link>
                             </div>
                         </div>
                     ))}
