@@ -1,5 +1,5 @@
 "use client"
-import React, { memo, useEffect, useMemo } from 'react';
+import React, { memo, useMemo } from 'react';
 import { BsStar, BsRocketTakeoff } from "react-icons/bs";
 import { GiNewspaper, GiThreeFriends, } from "react-icons/gi";
 import { TbCertificate } from "react-icons/tb";
@@ -51,16 +51,10 @@ const WhyChoose = memo(function WhyChoose() {
         return useData;
     }, []);
 
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            delay: 200,
-            offset: 50,
-            easing: 'ease-out',
-            once: true,
-            anchorPlacement: 'bottom-bottom',
-        });
-    }, []);
+    AOS.init({
+        duration: 1800,
+        offset: 100,
+    });
 
     return (
         <div className='p-6'

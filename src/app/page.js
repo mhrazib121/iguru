@@ -7,10 +7,14 @@ import BlogDiv from './Components/BlogDiv/BlogDiv';
 import Discover from './Components/Discover/Discover';
 import Achievement from './Components/Achivement/Achivement';
 import Testimonials from './Components/Testimonials';
+import AOS from "aos";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  // initialize aos
+
 
   return (
     <div >

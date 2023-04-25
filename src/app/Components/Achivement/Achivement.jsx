@@ -11,7 +11,8 @@ const Achievement = () => {
         <div className='md:w-3/5 mx-auto md:px-8 py-24'>
             <div className='md:max-w-[1480px] mx-auto grid md:grid-cols-2 max-w-[600px]  px-4 md:px-0'>
 
-                <div className='flex w-full flex-col justify-center '>
+                <div className='flex w-full flex-col justify-center '
+                    data-aos='fade-right' data-aos-offset='400'>
                     <Tittle text="Our Achievement" />
                     <p className='mt-2 text-lg '>Various versions have evolved over the years, sometimes by accident.</p>
 
@@ -73,7 +74,7 @@ const Achievement = () => {
                 </div>
 
 
-                <Image src={Person} className="m-auto md:order-last w-2/3 order-first" alt='person' />
+                <Image data-aos='fade-left' data-aos-offset='300' src={Person} className="m-auto md:order-last w-2/3 order-first" alt='person' />
 
 
 

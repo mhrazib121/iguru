@@ -10,7 +10,9 @@ const Courses = memo(function Courses() {
     const { color } = useTheme();
     const [data] = useData();
     return (
-        <div className='w-screen lg:w-3/5 p-4 bg-slate m-auto'>
+        <div className='w-screen lg:w-3/5 p-4 bg-slate m-auto'
+            data-aos='fade-up'
+            data-aos-delay='1200'>
             <Tittle text="Browse Top" />
             <br />
             <h1 className='text-5xl font-bold text-black'>Top Level Courses</h1>

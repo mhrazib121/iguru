@@ -1,7 +1,5 @@
 import React from 'react';
 import Feature1 from "../app/assets/home-2_slider-01.png";
-// import { ReactComponent as Check } from "../../assets/icons/Check.svg";
-// import person2 from "../../assets/Doctors/person-2.png";
 import Image from 'next/image';
 import useTheme from './utils/Theme/CustomTheme';
 
@@ -9,7 +7,10 @@ const HomeTopBanner = () => {
 
     const { color } = useTheme();
     return (
-        <div className="w-4/5 mx-auto  hero min-h-screen">
+        <div className="w-4/5 mx-auto  hero min-h-screen"
+            data-aos='fade-down'
+            data-aos-delay='1200'
+        >
             <div className="hero-content pb-0 flex-col lg:flex-row-reverse">
                 <Image src={Feature1} alt="Doctor" className="max-w-[280px] md:max-w-[420px]  rounded-lg " />
                 <div className=''>

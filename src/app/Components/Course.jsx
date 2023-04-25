@@ -6,7 +6,10 @@ import Link from 'next/link';
 const Course = ({ item }) => {
     const { id, name, logo, total } = item;
     return (
-        <div className='bg-slate-300 flex flex-col items-center relative p-8 hover-parent transition delay-150'>
+        <div className='bg-slate-300 flex flex-col items-center relative p-8 hover-parent transition delay-150'
+            data-aos='zoom-out'
+            data-aos-offset='300'
+            data-aos-delay='delay'>
             <Image width="200" height="100" src={logo} alt="course">
             </Image>
             <div className=' card-hover w-[100%] bg-[#000000] bg-opacity-30 h-[100%] absolute -mt-8 '>

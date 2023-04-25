@@ -50,14 +50,14 @@ const BlogDiv = () => {
     }, []);
 
     return (
-        <div className='w-3/5 mt-12 mx-auto'
-            data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
-        >
+        <div className='w-3/5 mt-12 mx-auto'>
             <br />
             <Tittle text="DISCOVER NEWS" />
             <h1 className='text-5xl font-bold mb-8'>Read our blogs</h1>
             <div className='md:flex   w-full gap-8  mx-auto'>
-                <div className='w-full mx-auto mb-8 md:mb-0'>
+                <div className='w-full mx-auto mb-8 md:mb-0'
+                    data-aos='fade-right' data-aos-offset='400'
+                >
                     <div className=' rounded-lg overflow-hidden'>
                         <div className=' hover:scale-125 duration-300'>
                             {demoData[0].img}
@@ -67,7 +67,8 @@ const BlogDiv = () => {
                     <p className='text-sm font-semibold mt-4'>{demoData[0].date} / 0 Comments</p>
                     <Link href="#" className='text-2xl font-semibold hover:text-orange-600 cursor-pointer' > {demoData[0].title} </Link>
                 </div>
-                <div className=' w-5/6'>
+                <div className=' w-5/6'
+                    data-aos='fade-left' data-aos-offset='300'>
 
                     {demoData.slice(1).map((blog) => (
                         <div key={blog.id} className='flex gap-4 mb-4'>
